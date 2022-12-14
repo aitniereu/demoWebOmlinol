@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>
+Omlinol
+</title>
+<link href="estilopastilla.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+</head>
+<body style="background-color:#7E3CAF">
+	
+			<img src="drogis.png" width="1475" height="300" >
+		
+	</br>
+<div class=index >	
+<table>
+
+<tr><td width="7%"><center><a href="pastillitas.html" class="enlaces"> <I>INICIO</I> </a></td>
+<td width="7%"><a href="who.html" class="enlaces"> <I> QUIÉNES SOMOS</I> </a></td>
+<td width="7%"><a href="Efectos.html" class="enlaces">  <I>EFECTOS ADVERSOS</I></a></td>
+<td width="5%"><a href="buy.html" class="enlaces">  <I>COMPRAR</I> </a></td></tr>
+
+</table>
+</div>
+<br>
+<H1>EFECTOS ADVERSOS</H1>
+<BR><BR><abi>
+Este producto, al ser tan novedoso, puede tener efectos secundarios no contemplados aún por nuestro equipo de científicos. Ha sido probado en ratones y alpacas, ninguna prueba a sido mortal. Nos ayudaría enormemente que se registrasen nuevos efectos de nuestros consumidores.
+Estos son algunos de los efectos adversos ya registrados, poco comunes y para nada dañinos:
+</abi><br><br>
+<fieldset style=width:40%><ai>
+<input type="checkbox" name="casilla" >Migrañas<BR>
+<input type="checkbox" name="casilla" >Síndrome de la pierna inquieta<BR>
+<input type="checkbox" name="casilla" >Desvanecimiento<BR>
+<input type="checkbox" name="casilla" >Cataratas<BR>
+<input type="checkbox" name="casilla" >Dolores musculares<BR><BR></ai>
+<textarea name="texto" rows="6" cols="60">Otros efectos adversos:
+</textarea>
+<br><button type="button" onclick="alert ('ENVIADO! Gracias por colaborar')">Enviar</button>
+</fieldset>
+<br><br><br>
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+</body>
+<html>

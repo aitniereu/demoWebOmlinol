@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>
+Omlinol
+</title>
+<link href="estilopastilla.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+</head>
+<body style="background-color:#7E3CAF">
+	
+			<img src="drogis.png" width="1475" height="300" >
+		
+	</br>
+<div class=index >	
+<table>
+
+<tr><td width="7%"><center><a href="index.html" class="enlaces"> <I>INICIO</I> </a></td>
+<td width="7%"><a href="who.html" class="enlaces"> <I> QUIÉNES SOMOS</I> </a></td>
+<td width="7%"><a href="Efectos.html" class="enlaces">  <I>EFECTOS ADVERSOS</I></a></td>
+<td width="5%"><a href="buy.html" class="enlaces">  <I>COMPRAR</I> </a></td></tr>
+
+</table>
+</div>
+<br>
+<H1>¿QUIÉNES SOMOS?</H1>
+<BR><BR>
+
+<table width="100%">
+			<tr>
+				<td>
+					<div width="100%">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d582.6672589709642!2d8.71046124931411!3d49.384966573660535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3fb1d984ca88787c!2sEMBL%20Heidelberg!5e0!3m2!1ses!2ses!4v1669802054547!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</td>
+				<td><abi>
+					Nosotros somos un grupo de jóvenes emprendedores e investigadores. Estudiamos el Grado de Bioquímica en la UCO y fuimos becados en el año 2018 para hacer una investigación en el laboratorio más importante de Alemania, Laboratorio Europeo de Biología Molecular de Heidelberg, tras ganar un concurso a nivel europeo en el que se pedía un experimento original y atractivo. Escogieron nuestro experimento para trabajarlo más a fondo, ya que vieron mucho potencial en él.
+					Llevamos 4 años enfocados plenamente en este trabajo con el cual esperamos facilitar el desarrollo en muchos ámbitos.
+				</abi></td>
+			</tr>
+		</table>
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+</body>
+<html>
